@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Click Event Example</title>
+    <style>
+        #myElement {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="myElement">
+        Double-click me!
+    </div>
+
+    <script>
+        // Get the element
+        const element = document.getElementById("myElement");
+
+        // Add event listener for double-click event
+        element.addEventListener("dblclick", function() {
+            alert("Element was double-clicked!");
+        });
+    </script>
+</body>
+</html>
